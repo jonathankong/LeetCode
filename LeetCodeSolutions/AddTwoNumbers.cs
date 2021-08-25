@@ -14,43 +14,41 @@ namespace LeetCodeSolutions
             this.val = val;
             this.next = next;
         }
+
+        public void ToString()
+        {
+            while (this.next != null)
+            {
+                Console.WriteLine(this.val);
+            }
+        }
     }
     static class AddTwoNumbers
     {
         public static ListNode Solution(ListNode l1, ListNode l2)
         {
+            int carry = 0;
             ListNode answer = new ListNode();
-            var current1 = l1;
-            var current2 = l2;
-            var currentAns = answer;
-            while (current1 != null || current2 != null)
-            {
-                int tempAns = 0;
-                if (current1 == null)
-                {
-                    tempAns = current2.val;
-                }
-                else if (current2 == null)
-                {
-                    tempAns = current1.val;
-                }
-                else
-                {
-                    tempAns = current1.val + current2.val;
-                }
+            var currentNode = answer;
 
-                if (tempAns >= 10)
+            while (l1 != null || l2 != null || carry != 0)
+            {
+                var l1Value = l1 == null ? 0 : l1.val;
+                var l2Value = l2 == null ? 0 : l2.val;
+
+                currentNode.val = l1Value + l2Value + carry;
+                carry = currentNode.val / 10;
+                currentNode.val = currentNode.val % 10;
+
+                l1 = l1 == null ? null : l1.next;
+                l2 = l2 == null ? null : l2.next;
+
+                if (l1 != null || l2 != null || carry != 0)
                 {
-                    tempAns = tempAns - 10;
-                    currentAns.next = new ListNode(1, null);
+                    currentNode.next = new ListNode();
+                    currentNode = currentNode.next;
                 }
-                currentAns.val = tempAns;
-                current1 = current1.next;
-                current2 = current2.next;
-                answer = currentAns;
-                currentAns = currentAns.next;
             }
-            answer = ReverseLinkedList(answer);
             return answer;
         }
 
