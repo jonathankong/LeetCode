@@ -19,7 +19,18 @@ namespace LeetCodeSolutions
             //Console.WriteLine(AddTwoNumbers.Solution(l1, l2));
 
             //Longest Substring Without Repeating Characters
-            Console.WriteLine(LongestSubstringWithoutRepeatChars.Solution("Hello"));
+            //Console.WriteLine(LongestSubstringWithoutRepeatChars.Solution("Hello"));
+
+            //Largest Palindrome in Substring
+            //Console.WriteLine(LargestPalindromeSubString.Solution("babad"));
+
+            //Reverse Integer
+            //Console.WriteLine(ReverseInteger.Solution(1534236469));
+
+            //Integer to English Words
+
+            //IList<IList<int>> s = new List<IList<int>>();
+            //Console.WriteLine(IntegerToEnglishWords.Solution1(12345));
         }
     }
 }
