@@ -35,8 +35,9 @@ namespace LeetCodeSolutions
             //Console.WriteLine(RecursionExercise1.Solution(6));
             //Console.WriteLine(RecursionExercise2.Solution(new int[] { 0, 12, 0, -100, 5, -11 }));
             //Console.WriteLine(RecursionExercise3.Solution(new int[] { 1, 2, 3, 4, 5, 6 }));
-            Console.WriteLine(RecursionExercise4.Solution(new char[] { 'k', 'a', 'y', 'y', 'a', 'k' }));
+            //Console.WriteLine(RecursionExercise4.Solution(new char[] { 'k', 'a', 'y', 'y', 'a', 'k' }));
 
+            Console.WriteLine(Permutations.Solution(new int[] { 1, 2, 3 }));
         }
     }
 }
