@@ -7,6 +7,7 @@ namespace LeetCodeSolutions
 {
     public static class Permutations
     {
+        
         public static IList<IList<int>> Solution (int[] nums)
         {
             if (nums.Length == 0) return null;
@@ -18,6 +19,7 @@ namespace LeetCodeSolutions
                 answer.Add(tempArr);
                 return answer;
             }
+            //Grab one number, remember it and create new array without that number and remember 
             foreach (int n in nums)
             {
                 IList<int> initArr = new List<int> { n };
@@ -27,6 +29,9 @@ namespace LeetCodeSolutions
             return answer;
         }
 
+        //We will continue to grab 1 number and reduce the array until we get 1 item in array
+        //Save answer
+        //And then backtrack in stack to get next iteration
         private static void Recursive(IList<int> initArr, int[] nums, ref IList<IList<int>> answer)
         {
 
