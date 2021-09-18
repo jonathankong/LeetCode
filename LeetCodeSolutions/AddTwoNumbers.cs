@@ -4,25 +4,6 @@ using System.Text;
 
 namespace LeetCodeSolutions
 {
-    //Definition for singly-linked list.
-    public class ListNode
-    {
-        public int val;
-        public ListNode next;
-        public ListNode(int val = 0, ListNode next = null)
-        {
-            this.val = val;
-            this.next = next;
-        }
-
-        public void ToString()
-        {
-            while (this.next != null)
-            {
-                Console.WriteLine(this.val);
-            }
-        }
-    }
     static class AddTwoNumbers
     {
         public static ListNode Solution(ListNode l1, ListNode l2)
