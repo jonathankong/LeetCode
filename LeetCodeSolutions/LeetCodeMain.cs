@@ -14,9 +14,12 @@ namespace LeetCodeSolutions
             //Console.WriteLine($"[{string.Join(", ", TwoSum.Solution(new int[] { 3, 2, 4 }, 6))}]");
 
             //Add Two Numbers
-            //ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
+            ListNode l1 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
+            RemoveNthNode.Solution(l1, 2).PrintValues();
             //ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
             //Console.WriteLine(AddTwoNumbers.Solution(l1, l2));
+
+            
 
             //Longest Substring Without Repeating Characters
             //Console.WriteLine(LongestSubstringWithoutRepeatChars.Solution("Hello"));
@@ -37,7 +40,8 @@ namespace LeetCodeSolutions
             //Console.WriteLine(RecursionExercise3.Solution(new int[] { 1, 2, 3, 4, 5, 6 }));
             //Console.WriteLine(RecursionExercise4.Solution(new char[] { 'k', 'a', 'y', 'y', 'a', 'k' }));
 
-            Console.WriteLine(Permutations.Solution(new int[] { 1, 2, 3 }));
+
+            //Console.WriteLine(Permutations.Solution(new int[] { 1, 2, 3 }));
         }
     }
 }
