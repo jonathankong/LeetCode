@@ -39,9 +39,9 @@ namespace LeetCodeSolutions
                 answers.Add(str.ToString());
                 return;
             }
+            //Balance pairs to be made
             else if (str.Length == 0 || lastChar == chars[2] && openBrackets == closeBrackets)
             {
-                //Balance pairs to be made
                 Recursion(answers, str + chars[1], openBrackets - 1, closeBrackets);
             }
             //If last character is an open character and there are more pairs left to create
