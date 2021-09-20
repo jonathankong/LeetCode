@@ -58,10 +58,17 @@ namespace LeetCodeSolutions
             //MergeTwoSortedLists.Solution(l1, l2).PrintValues();
 
             //Generate Parentheses
-            foreach(string s in GenerateParenthesis.Solution(3))
-            {
-                Console.WriteLine(s);
-            }
+            //foreach(string s in GenerateParenthesis.Solution(3))
+            //{
+            //    Console.WriteLine(s);
+            //}
+
+            //Search in Rotated Sorted Array
+            //Console.WriteLine(SearchRotatedSortedArray.Solution(new int[] { 4, 5, 6, 7, 0, 1, 2 }, 0));
+
+            //Find First and Last Position of Element in Sorted Array
+            var i = FindFirstAndLastPosition.Solution(new int[] { 5,7,7,8,8,10 }, 8);
+            Console.WriteLine($"Target = {i[0]}, Position = {i[1]}");
         }
     }
 }
