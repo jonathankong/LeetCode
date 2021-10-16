@@ -67,8 +67,14 @@ namespace LeetCodeSolutions
             //Console.WriteLine(SearchRotatedSortedArray.Solution(new int[] { 4, 5, 6, 7, 0, 1, 2 }, 0));
 
             //Find First and Last Position of Element in Sorted Array
-            var i = FindFirstAndLastPosition.Solution(new int[] { 5,7,7,8,8,10 }, 8);
-            Console.WriteLine($"Target = {i[0]}, Position = {i[1]}");
+            //var i = FindFirstAndLastPosition.Solution(new int[] { 5,7,7,8,8,10 }, 8);
+            //Console.WriteLine($"Target = {i[0]}, Position = {i[1]}");
+
+            //Combination Sum
+            //CombinationSum.Solution(new int[] { 2, 3, 5 }, 8);
+
+            //Jump Game 2
+            Console.WriteLine(JumpGame2.Solution(new int[] { 3, 2, 1} ));
         }
     }
 }
