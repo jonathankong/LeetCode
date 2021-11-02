@@ -74,7 +74,40 @@ namespace LeetCodeSolutions
             //CombinationSum.Solution(new int[] { 2, 3, 5 }, 8);
 
             //Jump Game 2
-            Console.WriteLine(JumpGame2.Solution(new int[] { 3, 2, 1} ));
+            //Console.WriteLine(JumpGame2.Solution(new int[] { 3, 2, 1} ));
+
+            //Rotate Image
+            //int[][] matrix = new int[][]
+            //{
+            //    new int[] {1, 2, 3, 4, 5},
+            //    new int[] {6, 7, 8, 9, 10},
+            //    new int[] {11, 12, 13, 14, 15},
+            //    new int[] {16, 17, 18, 19, 20}, 
+            //    new int[] {21, 22, 23, 24, 25}
+            //};
+
+            //int[][] answer = RotateImage.Solution(matrix);
+
+            //for(int i = 0; i < answer.Length; i++)
+            //{
+            //    for (int j = 0; j < answer.Length; j++)
+            //    {
+            //        Console.Write(answer[i][j] + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //Group Anagrams
+            //var s = GroupAnagrams.Solution(new string[] { "eat", "tea", "tan", "ate", "nat", "bat" });
+
+            //Merge Intervals
+            var s = MergeIntervals.Solution(new int[][] {
+                new int[] { 1, 4 }
+                //new int[] { 1, 3 }, 
+                //new int[] { 2, 6 },
+                //new int[] { 8, 10 },
+                //new int[] { 15, 18 }
+            });
         }
     }
 }
