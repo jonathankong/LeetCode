@@ -113,15 +113,24 @@ namespace LeetCodeSolutions
             //Console.WriteLine(UniquePaths.Solution(3, 2));
 
             //Minimum Path Sum
-            Console.WriteLine(MinimumPathSum.Solution(new int[][] {
-                new int[] { 1, 4, 8, 6, 2, 2, 1, 7 },
-                new int[] { 4, 7, 3, 1, 4, 5, 5, 1 },
-                new int[] { 8, 8, 2, 1, 1, 8, 0, 1 },
-                new int[] { 8, 9, 2, 9, 8, 0, 8, 9 },
-                new int[] { 5, 7, 5, 7, 1, 8, 5, 5 },
-                new int[] { 7, 0, 9, 4, 5, 6, 5, 6 },
-                new int[] { 4, 9, 9, 7, 9, 1, 9, 0 }
-            }));
+            //Console.WriteLine(MinimumPathSum.Solution(new int[][] {
+            //    new int[] { 1, 4, 8, 6, 2, 2, 1, 7 },
+            //    new int[] { 4, 7, 3, 1, 4, 5, 5, 1 },
+            //    new int[] { 8, 8, 2, 1, 1, 8, 0, 1 },
+            //    new int[] { 8, 9, 2, 9, 8, 0, 8, 9 },
+            //    new int[] { 5, 7, 5, 7, 1, 8, 5, 5 },
+            //    new int[] { 7, 0, 9, 4, 5, 6, 5, 6 },
+            //    new int[] { 4, 9, 9, 7, 9, 1, 9, 0 }
+            //}));
+
+            //Climbing Stairs
+            //Console.WriteLine(ClimbingStairs.Solution(5));
+
+            //Sort Colours
+            //SortColours.Solution(new int[] { 2, 0, 2, 1, 1, 0 });
+
+            //Subsets
+            Subsets.Solution(new int[] { 1, 2, 3, 4 });
         }
     }
 }
