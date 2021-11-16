@@ -130,7 +130,20 @@ namespace LeetCodeSolutions
             //SortColours.Solution(new int[] { 2, 0, 2, 1, 1, 0 });
 
             //Subsets
-            Subsets.Solution(new int[] { 1, 2, 3, 4 });
+            //Subsets.Solution(new int[] { 1, 2, 3, 4 });
+
+            //Word Search
+            //var board = new char[][]
+            //{
+            //    new char[] {'a', 'b', 'c', 'e' },
+            //    new char[] {'s', 'f', 'c', 'S' },
+            //    new char[] {'a', 'd', 'e', 'e' },
+            //};
+
+            //Console.WriteLine(WordSearch.Solution(board, "See"));
+
+            //Daily Temperatures
+            Console.WriteLine(DailyTemperatures.Solution(new int[] { 73, 74, 75, 71, 69, 72, 76, 73 }));
         }
     }
 }
