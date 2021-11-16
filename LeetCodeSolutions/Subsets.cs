@@ -15,10 +15,10 @@ namespace LeetCodeSolutions
             //Grab each element of the array
             for(int i = 0; i < nums.Length; i++)
             {
-                //This loop will increase the size of the subset array 
-                for(int j = 1; j <= nums.Length - i; j++)
+                answersList.Add(new List<int>(nums[i]));
+                for (int j = 1; j < nums.Length - i; j++)
                 {
-                    answersList.Add(nums.Skip(i).Take(j).ToList());
+                    
                 }
             }
             return answersList;
