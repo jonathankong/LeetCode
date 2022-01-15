@@ -143,7 +143,7 @@ namespace LeetCodeSolutions
             //Console.WriteLine(WordSearch.Solution(board, "See"));
 
             //Daily Temperatures
-            Console.WriteLine(DailyTemperatures.Solution(new int[] { 73, 74, 75, 71, 69, 72, 76, 73 }));
+            //Console.WriteLine(DailyTemperatures.Solution(new int[] { 73, 74, 75, 71, 69, 72, 76, 73 }));
 
             //Inorder Traversal
             //Preorder Traversal
@@ -152,6 +152,8 @@ namespace LeetCodeSolutions
             //BinaryTreeTilt
             //Unique Binary Search Trees
             //Deepest Leaves Sum
+            //Longest Palindrome
+            Console.WriteLine(LongestPalindrome.Solution("cbbd"));
         }
     }
 }
