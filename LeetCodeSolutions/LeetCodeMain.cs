@@ -28,7 +28,7 @@ namespace LeetCodeSolutions
             //Console.WriteLine(LargestPalindromeSubString.Solution("babad"));
 
             //Reverse Integer
-            //Console.WriteLine(ReverseInteger.Solution(1534236469));
+            //Console.WriteLine(ReverseInteger.Solution(-123));
 
             //Integer to English Words
 
@@ -153,7 +153,16 @@ namespace LeetCodeSolutions
             //Unique Binary Search Trees
             //Deepest Leaves Sum
             //Longest Palindrome
-            Console.WriteLine(LongestPalindrome.Solution("cbbd"));
+            //Console.WriteLine(LongestPalindrome.Solution("cbbd"));
+
+            //MyAtoi
+            //Console.WriteLine(MyAtoi.Solution("9223372036854775808"));
+
+            //Container With Most Water
+            //Console.WriteLine(ContainerWithMostWater.Solution());
+
+            //ZigZag Conversion
+            Console.WriteLine(ZigZagConversion.Solution("paypalishiring", 5));
         }
     }
 }
