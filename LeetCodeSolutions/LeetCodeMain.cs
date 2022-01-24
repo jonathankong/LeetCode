@@ -162,7 +162,9 @@ namespace LeetCodeSolutions
             //Console.WriteLine(ContainerWithMostWater.Solution());
 
             //ZigZag Conversion
-            Console.WriteLine(ZigZagConversion.Solution("paypalishiring", 5));
+            //Console.WriteLine(ZigZagConversion.Solution("paypalishiring", 5));
+
+            Console.WriteLine(123 % 10);
         }
     }
 }
