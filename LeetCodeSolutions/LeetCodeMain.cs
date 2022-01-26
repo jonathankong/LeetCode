@@ -164,7 +164,11 @@ namespace LeetCodeSolutions
             //ZigZag Conversion
             //Console.WriteLine(ZigZagConversion.Solution("paypalishiring", 5));
 
-            Console.WriteLine(123 % 10);
+            //Integer To Roman
+            //Console.WriteLine(Integer2Roman.Solution(1994));
+
+            //Detect Capital
+            //Console.WriteLine(DetectCapital.Solution("Jonathan"));
         }
     }
 }
