@@ -169,6 +169,9 @@ namespace LeetCodeSolutions
 
             //Detect Capital
             //Console.WriteLine(DetectCapital.Solution("Jonathan"));
+
+            //All Elements in Two Binary Search Trees
+            Console.WriteLine(AllElementsinTwoBinarySearchTrees.Solution(null, null));
         }
     }
 }
