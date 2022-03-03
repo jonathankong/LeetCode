@@ -171,7 +171,10 @@ namespace LeetCodeSolutions
             //Console.WriteLine(DetectCapital.Solution("Jonathan"));
 
             //All Elements in Two Binary Search Trees
-            Console.WriteLine(AllElementsinTwoBinarySearchTrees.Solution(null, null));
+            //Console.WriteLine(AllElementsinTwoBinarySearchTrees.Solution(null, null));
+
+            //Binary Search
+            Console.WriteLine(BinarySerach.Solution(new int[]{-1, 0, 3, 5, 9, 12}, 9));
         }
     }
 }
