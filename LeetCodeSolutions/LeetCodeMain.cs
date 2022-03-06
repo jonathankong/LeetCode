@@ -174,7 +174,16 @@ namespace LeetCodeSolutions
             //Console.WriteLine(AllElementsinTwoBinarySearchTrees.Solution(null, null));
 
             //Binary Search
-            Console.WriteLine(BinarySerach.Solution(new int[]{-1, 0, 3, 5, 9, 12}, 9));
+            //Console.WriteLine(BinarySerach.Solution(new int[]{-1, 0, 3, 5, 9, 12}, 9));
+
+            //First Bad Version
+            //Console.WriteLine(FirstBadVersion.Solution(5));
+
+            //Search Index Position
+            //Console.WriteLine(SearchIndexPosition.Solution(new int[]{1, 3, 5, 7}, 2));
+            
+            //Rotate Array
+            //Console.WriteLine(RotateArray.Solution(new int[]{1, 2, 3, 4, 5, 6, 7}, 2));
         }
     }
 }
