@@ -184,6 +184,17 @@ namespace LeetCodeSolutions
             
             //Rotate Array
             //Console.WriteLine(RotateArray.Solution(new int[]{1, 2, 3, 4, 5, 6, 7}, 2));
+
+            //Move Zeroes
+            
+            //Two Sums2
+            //Console.WriteLine(TwoSum2.Solution(new int[] {2,7,11,15}, 9));
+
+            //Reverse String
+            //Console.WriteLine(new char[] {'h', 'e', 'l', 'l', 'o'});
+
+            //Reverse Words in String 3
+            Console.WriteLine(ReverseWordsInString3.Solution("Hello how are you?"));
         }
     }
 }
