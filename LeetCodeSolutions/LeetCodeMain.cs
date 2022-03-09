@@ -194,7 +194,10 @@ namespace LeetCodeSolutions
             //Console.WriteLine(new char[] {'h', 'e', 'l', 'l', 'o'});
 
             //Reverse Words in String 3
-            Console.WriteLine(ReverseWordsInString3.Solution("Hello how are you?"));
+            //Console.WriteLine(ReverseWordsInString3.Solution("Hello how are you?"));
+
+            //Middle of the LinkedList
+            //Console.WriteLine(MiddleLinkedList.Solution(new ListNode()));
         }
     }
 }
