@@ -198,6 +198,32 @@ namespace LeetCodeSolutions
 
             //Middle of the LinkedList
             //Console.WriteLine(MiddleLinkedList.Solution(new ListNode()));
+
+            //Flood Fill
+            // Console.WriteLine(FloodFill.Solution(
+            //     new int[][] {
+            //         new int[] {1,1,1},
+            //         new int[] {1,1,0},
+            //         new int[]{1,0,1}
+            //         }, 1, 1, 2));
+
+            //Find Max Area
+            Console.WriteLine(FindMaxArea.Solution(
+                new int[][] 
+                {
+                    new int[] {0,0,1,0,0,0,0,1,0,0,0,0,0},
+                    new int[] {0,0,0,0,0,0,0,1,1,1,0,0,0},
+                    new int[] {0,1,1,0,1,0,0,0,0,0,0,0,0},
+                    new int[] {0,1,0,0,1,1,0,0,1,0,1,0,0},
+                    new int[] {0,1,0,0,1,1,0,0,1,1,1,0,0},
+                    new int[] {0,0,0,0,0,0,0,0,0,0,1,0,0},
+                    new int[] {0,0,0,0,0,0,0,1,1,1,0,0,0},
+                    new int[] {0,0,0,0,0,0,0,1,1,0,0,0,0}
+                }
+            ));
+
+            //Check Inclusions
+            Console.WriteLine(CheckInclusion.Solution("ab", "eidbaoooo"));
         }
     }
 }
