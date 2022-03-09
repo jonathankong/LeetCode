@@ -8,30 +8,59 @@ namespace LeetCodeSolutions
     {
         public static ListNode Solution(ListNode head, int n)
         {
-            int listNodeLength = 1;
-            var currentNode = head;
+            //First Solution (first loop through and count nodes, then loop through again to find and remove node)
+            #region First Solution
+            // int listNodeLength = 1;
+            // var currentNode = head;
 
-            //Get length of linked list first
-            while (currentNode.next != null)
+            // while (currentNode.next != null)
+            // {
+            //     currentNode = currentNode.next;
+            //     listNodeLength++;
+            // }
+
+            // currentNode = head;
+            // if (listNodeLength == 1 && n == 1) return null;
+            // else if (listNodeLength - n == 0) return head.next;
+            // else
+            // {
+            //     for (int i = 1; i < listNodeLength - n; i++)
+            //     {
+            //         currentNode = currentNode.next;
+            //     }
+
+            //     currentNode.next = currentNode.next.next;
+            // }
+            // return head;
+            #endregion
+        
+            //Second Solution
+            #region Second Solution
+            var currNode = head;
+            var answer = head;
+            
+            int nodeCounter = 0;
+            
+            while (currNode != null)
             {
-                currentNode = currentNode.next;
-                listNodeLength++;
+                //Move pointer only when the diff between nodeCounter and n is greater than 1
+                //Otherwise, this means that the current known length of the list isn't large enough
+                //to find the node to remove
+                
+                //The node to remove changes as we know more about the linkedlist length
+                if (nodeCounter - n > 0) answer = answer.next;
+                
+                currNode = currNode.next;
+                nodeCounter += 1;
             }
-            //Reset currentNode back to head of linked list
-            currentNode = head;
-
-            //Return next in linked list if head is going to be removed
-            if (listNodeLength - n == 0) return head.next;
-            else
-            {
-                for (int i = 1; i < listNodeLength - n; i++)
-                {
-                    currentNode = currentNode.next;
-                }
-
-                currentNode.next = currentNode.next.next;
-            }
+            
+            //This means that we are removing the head of the linkedlist
+            if (nodeCounter - n == 0) return head.next;
+            //Remove node by changing ListNode pointer
+            answer.next = answer.next.next;
+            
             return head;
+            #endregion
         }
     }
 }
