@@ -208,22 +208,62 @@ namespace LeetCodeSolutions
             //         }, 1, 1, 2));
 
             //Find Max Area
-            Console.WriteLine(FindMaxArea.Solution(
-                new int[][] 
-                {
-                    new int[] {0,0,1,0,0,0,0,1,0,0,0,0,0},
-                    new int[] {0,0,0,0,0,0,0,1,1,1,0,0,0},
-                    new int[] {0,1,1,0,1,0,0,0,0,0,0,0,0},
-                    new int[] {0,1,0,0,1,1,0,0,1,0,1,0,0},
-                    new int[] {0,1,0,0,1,1,0,0,1,1,1,0,0},
-                    new int[] {0,0,0,0,0,0,0,0,0,0,1,0,0},
-                    new int[] {0,0,0,0,0,0,0,1,1,1,0,0,0},
-                    new int[] {0,0,0,0,0,0,0,1,1,0,0,0,0}
-                }
-            ));
+            // Console.WriteLine(FindMaxArea.Solution(
+            //     new int[][] 
+            //     {
+            //         new int[] {0,0,1,0,0,0,0,1,0,0,0,0,0},
+            //         new int[] {0,0,0,0,0,0,0,1,1,1,0,0,0},
+            //         new int[] {0,1,1,0,1,0,0,0,0,0,0,0,0},
+            //         new int[] {0,1,0,0,1,1,0,0,1,0,1,0,0},
+            //         new int[] {0,1,0,0,1,1,0,0,1,1,1,0,0},
+            //         new int[] {0,0,0,0,0,0,0,0,0,0,1,0,0},
+            //         new int[] {0,0,0,0,0,0,0,1,1,1,0,0,0},
+            //         new int[] {0,0,0,0,0,0,0,1,1,0,0,0,0}
+            //     }
+            // ));
 
             //Check Inclusions
-            Console.WriteLine(CheckInclusion.Solution("ab", "eidbaoooo"));
-        }
+            // Console.WriteLine(CheckInclusion.Solution("ab", "eidbaoooo"));
+
+            //Maximum Subarray
+            //Console.WriteLine(MaximumSubarray.Solution(new int[]{-2, 1, -3, 4, -1, 2, 1, -5 , 4}));
+
+            //Remove Duplicates from Array
+            //Console.WriteLine(RemoveDuplicatesFromArray.Solution(new int[] {1, 1, 2}));
+
+            //RewrapAndJustify
+            // var lines = RewrapAndJustify.Solution(new string[]{
+            //     "Hello how are you?",
+            //     "I'm fine thank you."
+            // }, 10);
+            // foreach (var line in lines) 
+            // {
+            //     Console.WriteLine(line);
+            // }
+
+            //Merge Sorted Array
+            // int[] answers = MergeSortedArray.Solution(new int[]{1, 2, 3, 0, 0, 0}, 
+            //                                             3, 
+            //                                             new int[]{2, 5, 6}, 
+            //                                             3);
+            // foreach (int answer in answers) 
+            // {
+            //     Console.WriteLine($"{answer}, ");
+            // }
+            
+            //Intersection Of Two Arrays 2
+            // int[] answers = IntersectionOfTwoArrays2.Solution(new int[]{1, 2, 2, 1}, 
+            //                                             new int[]{2, 2});
+            // foreach (int answer in answers) 
+            // {
+            //     Console.WriteLine($"{answer}, ");
+            // }
+
+            //Best time to buy and sell stock
+            //Console.WriteLine(BestTimeToBuySellStock.Solution(new int[] {7,1,5,3,6,4}));
+
+            //Best time to buy and sell stock 2
+            Console.WriteLine(BestTimeToBuySellStock2.Solution(new int[] {7,1,5,3,6,4}));
+        }  
     }
 }
