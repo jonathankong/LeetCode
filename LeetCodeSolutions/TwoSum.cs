@@ -38,18 +38,23 @@ namespace LeetCodeSolutions
             //return new int[] { firstNumIndex, secondNumIndex };
             #endregion
             #region Recusion
-            return Recursion(nums, 0, 1, target);
+            //return Recursion(nums, 0, 1, target);
             #endregion
             #region FindingComplements
-            //Dictionary<int, int> complements = new Dictionary<int, int>();
-            //for (int i = 0; i < nums.Length; i++)
-            //{
-            //    if (complements.TryGetValue(nums[i], out int value))
-            //    {
-            //        return new int[] { value, i };
-            //    }
-            //    complements.Add(target - nums[i], i);
-            //}
+            Dictionary<int, int> compliments = new Dictionary<int, int>();
+            for (int i = 0; i < nums.Length; i++)
+            {   
+                if (compliments.ContainsKey(nums[i]))
+                {
+                    return new int[]{compliments[nums[i]], i};
+                }
+                else if (!compliments.ContainsKey(target - nums[i]))
+                {
+                    compliments.Add(target - nums[i], i);
+                }
+            }
+            //Should never get here
+            return new int[2];
             #endregion
         }
 
