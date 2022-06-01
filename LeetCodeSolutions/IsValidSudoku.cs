@@ -20,18 +20,7 @@ namespace LeetCodeSolutions
                 Dictionary<int, int> uniqueRowValues = new Dictionary<int, int>();
                 Dictionary<int, int> uniqueColValues = new Dictionary<int, int>();
                 Dictionary<int, int> uniqueSubBoxValues = new Dictionary<int, int>();
-                
-                //Check to see if 3rd SubBox is reached
-                if (topLeftSubBoxColIndex + 3 > 8) 
-                {
-                    topLeftSubBoxRowIndex += 3;
-                    topLeftSubBoxColIndex = 0;
-                }
-                else 
-                {
-                    topLeftSubBoxColIndex += 3;
-                }
-                
+          
                 int startRowIndex = topLeftSubBoxRowIndex;
                 int startColIndex = topLeftSubBoxColIndex;
                 
@@ -58,6 +47,17 @@ namespace LeetCodeSolutions
                     {
                         startColIndex += 1;    
                     }
+                }
+
+                //Check to see if 3rd SubBox is reached
+                if (topLeftSubBoxColIndex + 3 > 8) 
+                {
+                    topLeftSubBoxRowIndex += 3;
+                    topLeftSubBoxColIndex = 0;
+                }
+                else 
+                {
+                    topLeftSubBoxColIndex += 3;
                 }
             }
             return true;
