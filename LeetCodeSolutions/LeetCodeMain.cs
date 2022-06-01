@@ -146,6 +146,7 @@ namespace LeetCodeSolutions
             //Console.WriteLine(DailyTemperatures.Solution(new int[] { 73, 74, 75, 71, 69, 72, 76, 73 }));
 
             //Inorder Traversal
+
             //Preorder Traversal
             //Postorder Travesal
             //MaximumProductSubArray
@@ -172,6 +173,7 @@ namespace LeetCodeSolutions
 
             //All Elements in Two Binary Search Trees
             //Console.WriteLine(AllElementsinTwoBinarySearchTrees.Solution(null, null));
+            Console.WriteLine(AllElementsinTwoBinarySearchTrees.Solution());
 
             //Binary Search
             //Console.WriteLine(BinarySerach.Solution(new int[]{-1, 0, 3, 5, 9, 12}, 9));
@@ -263,7 +265,10 @@ namespace LeetCodeSolutions
             //Console.WriteLine(BestTimeToBuySellStock.Solution(new int[] {7,1,5,3,6,4}));
 
             //Best time to buy and sell stock 2
-            Console.WriteLine(BestTimeToBuySellStock2.Solution(new int[] {7,1,5,3,6,4}));
+            //Console.WriteLine(BestTimeToBuySellStock2.Solution(new int[] {7,1,5,3,6,4}));
+
+            //Median Of Two Sorted Arrays
+            //Console.WriteLine(MedianOfTwoSortedArrays.Solution(new int[]{1}, new int[]{1}));
         }  
     }
 }
