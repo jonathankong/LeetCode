@@ -173,7 +173,7 @@ namespace LeetCodeSolutions
 
             //All Elements in Two Binary Search Trees
             //Console.WriteLine(AllElementsinTwoBinarySearchTrees.Solution(null, null));
-            Console.WriteLine(AllElementsinTwoBinarySearchTrees.Solution());
+            //Console.WriteLine(AllElementsinTwoBinarySearchTrees.Solution());
 
             //Binary Search
             //Console.WriteLine(BinarySerach.Solution(new int[]{-1, 0, 3, 5, 9, 12}, 9));
@@ -269,6 +269,21 @@ namespace LeetCodeSolutions
 
             //Median Of Two Sorted Arrays
             //Console.WriteLine(MedianOfTwoSortedArrays.Solution(new int[]{1}, new int[]{1}));
+
+            //Validate Sudoku
+            char[,] board = {
+                {'5','3','.','.','7','.','.','.','.'},
+                {'6','.','.','1','9','5','.','.','.'},
+                {'.','9','8','.','.','.','.','6','.'},
+                {'8','.','.','.','6','.','.','.','3'},
+                {'4','.','.','8','.','3','.','.','1'},
+                {'7','.','.','.','2','.','.','.','6'},
+                {'.','6','.','.','.','.','2','8','.'},
+                {'.','.','.','4','1','9','.','.','5'},
+                {'.','.','.','.','8','.','.','7','9'}
+            };
+            
+            Console.WriteLine(IsValidSudoku.Solution(board));
         }  
     }
 }
