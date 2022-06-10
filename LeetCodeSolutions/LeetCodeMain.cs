@@ -271,19 +271,43 @@ namespace LeetCodeSolutions
             //Console.WriteLine(MedianOfTwoSortedArrays.Solution(new int[]{1}, new int[]{1}));
 
             //Validate Sudoku
-            char[][] board = {
-                new char[] {'5','3','.','.','7','.','.','.','.'},
-                new char[] {'6','.','.','1','9','5','.','.','.'},
-                new char[] {'.','9','8','.','.','.','.','6','.'},
-                new char[] {'8','.','.','.','6','.','.','.','3'},
-                new char[] {'4','.','.','8','.','3','.','.','1'},
-                new char[] {'7','.','.','.','2','.','.','.','6'},
-                new char[] {'.','6','.','.','.','.','2','8','.'},
-                new char[] {'.','.','.','4','1','9','.','.','5'},
-                new char[] {'.','.','.','.','8','.','.','7','9'}
-            };
+            // char[][] board = {
+            //     new char[] {'5','3','.','.','7','.','.','.','.'},
+            //     new char[] {'6','.','.','1','9','5','.','.','.'},
+            //     new char[] {'.','9','8','.','.','.','.','6','.'},
+            //     new char[] {'8','.','.','.','6','.','.','.','3'},
+            //     new char[] {'4','.','.','8','.','3','.','.','1'},
+            //     new char[] {'7','.','.','.','2','.','.','.','6'},
+            //     new char[] {'.','6','.','.','.','.','2','8','.'},
+            //     new char[] {'.','.','.','4','1','9','.','.','5'},
+            //     new char[] {'.','.','.','.','8','.','.','7','9'}
+            // };
             
-            Console.WriteLine(IsValidSudoku.Solution(board));
+            // Console.WriteLine(IsValidSudoku.Solution(board));
+
+            Console.WriteLine(Solution(3));
         }  
+
+        static IList<IList<int>> Solution(int numRows)
+        {
+            List<IList<int>> answers = new List<IList<int>>();
+            
+            for (int i = 1; i <= numRows; i++)
+            {
+                int[] tempAnswers = new int[i];
+                tempAnswers[0] = 1;
+                tempAnswers[i - 1] = 1;
+                if (i >= 3)
+                {
+                    Console.WriteLine(answers[0][0]);
+                    for (int j = 1; j < i - 1; j++)
+                    {
+                        tempAnswers[j] = answers[i - 2][j - 1] + answers[i - 2][j];
+                    }
+                }
+                answers.Add(tempAnswers.ToList<int>());
+            }
+            return answers;
+        }
     }
 }
