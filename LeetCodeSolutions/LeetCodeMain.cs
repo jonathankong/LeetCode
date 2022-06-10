@@ -285,29 +285,11 @@ namespace LeetCodeSolutions
             
             // Console.WriteLine(IsValidSudoku.Solution(board));
 
-            Console.WriteLine(Solution(3));
-        }  
-
-        static IList<IList<int>> Solution(int numRows)
-        {
-            List<IList<int>> answers = new List<IList<int>>();
-            
-            for (int i = 1; i <= numRows; i++)
-            {
-                int[] tempAnswers = new int[i];
-                tempAnswers[0] = 1;
-                tempAnswers[i - 1] = 1;
-                if (i >= 3)
-                {
-                    Console.WriteLine(answers[0][0]);
-                    for (int j = 1; j < i - 1; j++)
-                    {
-                        tempAnswers[j] = answers[i - 2][j - 1] + answers[i - 2][j];
-                    }
-                }
-                answers.Add(tempAnswers.ToList<int>());
-            }
-            return answers;
+            //Reshape the matrix
+            int[][] mat = new int[2][];
+            mat[0] = new int[] {1, 2};
+            mat[1] = new int[] {3, 4};
+            Console.WriteLine(ReshapeMatrix.Solution(mat, 1, 4));
         }
     }
 }
