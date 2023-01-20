@@ -286,10 +286,13 @@ namespace LeetCodeSolutions
             // Console.WriteLine(IsValidSudoku.Solution(board));
 
             //Reshape the matrix
-            int[][] mat = new int[2][];
-            mat[0] = new int[] {1, 2};
-            mat[1] = new int[] {3, 4};
-            Console.WriteLine(ReshapeMatrix.Solution(mat, 1, 4));
+            // int[][] mat = new int[2][];
+            // mat[0] = new int[] {1, 2};
+            // mat[1] = new int[] {3, 4};
+            // Console.WriteLine(ReshapeMatrix.Solution(mat, 1, 4));
+
+            //Contains Duplicates
+            Console.WriteLine(ContainsDuplicate.Solution(new int[]{ 1, 2, 3, 1}));
         }
     }
 }
