@@ -292,7 +292,10 @@ namespace LeetCodeSolutions
             // Console.WriteLine(ReshapeMatrix.Solution(mat, 1, 4));
 
             //Contains Duplicates
-            Console.WriteLine(ContainsDuplicate.Solution(new int[]{ 1, 2, 3, 1}));
+            //Console.WriteLine(ContainsDuplicate.Solution(new int[]{ 1, 2, 3, 1}));
+
+            //Valid Anagrams
+            Console.WriteLine(ValidAnagram.Solution("anagram", "nagaram"));
         }
     }
 }
