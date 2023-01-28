@@ -295,7 +295,14 @@ namespace LeetCodeSolutions
             //Console.WriteLine(ContainsDuplicate.Solution(new int[]{ 1, 2, 3, 1}));
 
             //Valid Anagrams
-            Console.WriteLine(ValidAnagram.Solution("anagram", "nagaram"));
+            //Console.WriteLine(ValidAnagram.Solution("anagram", "nagaram"));
+
+            //Top K Frequent Elements
+            var answer = TopKFrequentElements.Solution(new int[] {1, 1, 1, 2, 2, 2, 2, 1, 1, 3}, 2);
+            foreach (int i in answer)
+            {
+                Console.Write($"{i}, ");
+            }
         }
     }
 }
