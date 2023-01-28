@@ -35,7 +35,10 @@ namespace LeetCodeSolutions
                 if (kvp.Value % 2 != 0) return false;
             }
             
+            IList<IList<string>> e = new List<IList<string>>();
+
             return true;
+
         }
     }
 }
