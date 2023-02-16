@@ -311,12 +311,14 @@ namespace LeetCodeSolutions
             //     Console.Write($"{i}, ");
             // }
 
-            Console.WriteLine(EncodeDecodeStrings.Encode(new List<string>(){"lint", "code", "love", "you"}));
-            var words = EncodeDecodeStrings.Decode("4#lint4#code4#love3#you");
-            foreach (var word in words)
-            {
-                Console.WriteLine(word);
-            }
+            // Console.WriteLine(EncodeDecodeStrings.Encode(new List<string>(){"lint", "code", "love", "you"}));
+            // var words = EncodeDecodeStrings.Decode("4#lint4#code4#love3#you");
+            // foreach (var word in words)
+            // {
+            //     Console.WriteLine(word);
+            // }
+
+            Console.WriteLine(LongestConsecutive.Solution(new int[]{0,3,7,2,5,8,4,6,0,1}));
         }
     }
 }
