@@ -319,6 +319,7 @@ namespace LeetCodeSolutions
             // }
 
             Console.WriteLine(LongestConsecutive.Solution(new int[]{0,3,7,2,5,8,4,6,0,1}));
+            Stack<int> s = new Stack<int>();
         }
     }
 }
