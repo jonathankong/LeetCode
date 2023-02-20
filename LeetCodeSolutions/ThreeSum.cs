@@ -38,7 +38,6 @@ namespace LeetCodeSolutions
             #endregion
             #region Second Answer
                 IList<IList<int>> answers = new List<IList<int>>();
-                Dictionary<int, int> memoCurrentNum = new Dictionary<int, int>();
                 Dictionary<Tuple<int, int, int>, int> memoAnswers = new Dictionary<Tuple<int, int, int>, int>();
 
                 //Sort Array first
@@ -48,7 +47,7 @@ namespace LeetCodeSolutions
                 for (int ind = 0; ind < nums.Length; ind++)
                 {
                     //See if it's a duplicate
-                    if (memoCurrentNum.ContainsKey(nums[ind])) continue;
+                    if (nums[ind] == nums[ind] - 1) continue;
                     //Create 2 pointers
                     int left = ind + 1;
                     int right = nums.Length - 1;
@@ -67,7 +66,6 @@ namespace LeetCodeSolutions
                             {
                                 //Add unique answer and memoize it
                                 answers.Add(new int[]{nums[ind], nums[left], nums[right]});
-                                memoCurrentNum.TryAdd(nums[ind], 0);
                                 memoAnswers.TryAdd(new Tuple<int, int, int>(nums[ind], nums[left], nums[right]), 0);
                             }
                             //Continue testing with nums[ind] in case there are unique answers
