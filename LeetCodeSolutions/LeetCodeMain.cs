@@ -311,6 +311,7 @@ namespace LeetCodeSolutions
             //     Console.Write($"{i}, ");
             // }
 
+            // Encoding and decoding strings
             // Console.WriteLine(EncodeDecodeStrings.Encode(new List<string>(){"lint", "code", "love", "you"}));
             // var words = EncodeDecodeStrings.Decode("4#lint4#code4#love3#you");
             // foreach (var word in words)
@@ -318,8 +319,18 @@ namespace LeetCodeSolutions
             //     Console.WriteLine(word);
             // }
 
-            Console.WriteLine(LongestConsecutive.Solution(new int[]{0,3,7,2,5,8,4,6,0,1}));
-            Stack<int> s = new Stack<int>();
+            //Longest Consecutive sequence
+            //Console.WriteLine(LongestConsecutive.Solution(new int[]{0,3,7,2,5,8,4,6,0,1}));
+
+            // Min Stack
+            // MinStack obj = new MinStack();
+            // obj.Push(-2);
+            // obj.Push(0);
+            // obj.Push(-3);
+            // int ret1 = obj.GetMin();
+            // obj.Pop();
+            // int ret2 = obj.Top();
+            // int ret3 = obj.GetMin();
         }
     }
 }
