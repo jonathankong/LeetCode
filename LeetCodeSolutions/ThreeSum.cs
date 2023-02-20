@@ -9,6 +9,8 @@ namespace LeetCodeSolutions
     {
         public static IList<IList<int>> Solution(int[] nums)
         {   
+            //Brute force method doesn't work as it times out. 
+            //O(n^3) time complexity
             #region First Answer
             // IList<IList<int>> answers = new List<IList<int>>();
             // Dictionary<Tuple<int, int>, int> memo = new Dictionary<Tuple<int, int>, int>();
@@ -36,9 +38,56 @@ namespace LeetCodeSolutions
             // }
             // return answers;
             #endregion
+            //Sorts array first before processing values
             #region Second Answer
+                // IList<IList<int>> answers = new List<IList<int>>();
+                // Dictionary<int, int> memoCurrentNum = new Dictionary<int, int>();
+                // Dictionary<Tuple<int, int, int>, int> memoAnswers = new Dictionary<Tuple<int, int, int>, int>();
+
+                // //Sort Array first
+                // Array.Sort(nums);
+
+                // //Go through each value in sorted array
+                // for (int ind = 0; ind < nums.Length; ind++)
+                // {
+                //     //See if it's a duplicate
+                //     if (memoCurrentNum.ContainsKey(nums[ind])) continue;
+                //     //Create 2 pointers
+                //     int left = ind + 1;
+                //     int right = nums.Length - 1;
+
+                //     while (left < right)
+                //     {
+                //         int target = nums[ind] + nums[left] + nums[right];
+                //         //Target value is too small
+                //         if (target < 0) left++;
+                //         //Target value is too larger
+                //         else if (target > 0) right--;
+                //         else
+                //         {
+                //             //Check if answer has already been encountered
+                //             if (!memoAnswers.ContainsKey(new Tuple<int, int, int>(nums[ind], nums[left], nums[right])))
+                //             {
+                //                 //Add unique answer and memoize it
+                //                 answers.Add(new int[]{nums[ind], nums[left], nums[right]});
+                //                 memoCurrentNum.TryAdd(nums[ind], 0);
+                //                 memoAnswers.TryAdd(new Tuple<int, int, int>(nums[ind], nums[left], nums[right]), 0);
+                //             }
+                //             //Continue testing with nums[ind] in case there are unique answers
+                //             left++;
+                //             right--;
+                //         } 
+                //     }
+                // }
+                // return answers;
+            #endregion
+
+            /*
+            Similar to second answer but attemping to get rid of the dictionaries used for memoization by 
+            utilizing the sorted array's properties
+            */
+            #region Third Answer
                 IList<IList<int>> answers = new List<IList<int>>();
-                Dictionary<Tuple<int, int, int>, int> memoAnswers = new Dictionary<Tuple<int, int, int>, int>();
 
                 //Sort Array first
                 Array.Sort(nums);
@@ -47,7 +96,7 @@ namespace LeetCodeSolutions
                 for (int ind = 0; ind < nums.Length; ind++)
                 {
                     //See if it's a duplicate
-                    if (nums[ind] == nums[ind] - 1) continue;
+                    if (ind > 0 && nums[ind] == nums[ind - 1]) continue;
                     //Create 2 pointers
                     int left = ind + 1;
                     int right = nums.Length - 1;
@@ -60,17 +109,14 @@ namespace LeetCodeSolutions
                         //Target value is too larger
                         else if (target > 0) right--;
                         else
-                        {
-                            //Check if answer has already been encountered
-                            if (!memoAnswers.ContainsKey(new Tuple<int, int, int>(nums[ind], nums[left], nums[right])))
-                            {
-                                //Add unique answer and memoize it
-                                answers.Add(new int[]{nums[ind], nums[left], nums[right]});
-                                memoAnswers.TryAdd(new Tuple<int, int, int>(nums[ind], nums[left], nums[right]), 0);
-                            }
-                            //Continue testing with nums[ind] in case there are unique answers
+                        { 
+                            //Add unique answer
+                            answers.Add(new int[]{nums[ind], nums[left], nums[right]});
                             left++;
                             right--;
+                            //Avoid duplicate values 
+                            while (nums[left] == nums[left - 1] && left < right) left++;
+                            while (nums[right] == nums[right + 1] && left < right) right--;
                         } 
                     }
                 }
