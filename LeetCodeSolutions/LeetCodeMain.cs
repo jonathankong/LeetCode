@@ -331,6 +331,9 @@ namespace LeetCodeSolutions
             // obj.Pop();
             // int ret2 = obj.Top();
             // int ret3 = obj.GetMin();
+
+            //Valid Palindrome
+            Console.WriteLine(ValidPalindrome.Solution("race car"));
         }
     }
 }
