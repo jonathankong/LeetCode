@@ -336,11 +336,14 @@ namespace LeetCodeSolutions
             //Console.WriteLine(ValidPalindrome.Solution("race car"));
 
             //Three Sum
-            var answers = ThreeSum.Solution(new int[]{-1,0,1,2,-1,-4});
-            foreach(var answer in answers)
-            {
-                Console.WriteLine($"[{answer[0]}, {answer[1]}, {answer[2]}]");
-            }
+            // var answers = ThreeSum.Solution(new int[]{-1,0,1,2,-1,-4});
+            // foreach(var answer in answers)
+            // {
+            //     Console.WriteLine($"[{answer[0]}, {answer[1]}, {answer[2]}]");
+            // }
+
+            //Is Palindrome
+            Console.WriteLine(IsPalindrome.Solution(-1231));
         }
     }
 }
