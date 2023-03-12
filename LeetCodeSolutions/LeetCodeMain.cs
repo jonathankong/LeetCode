@@ -343,7 +343,10 @@ namespace LeetCodeSolutions
             // }
 
             //Is Palindrome
-            Console.WriteLine(IsPalindrome.Solution(-1231));
+            //Console.WriteLine(IsPalindrome.Solution(-1231));
+
+            //Roman 2 Integer
+            Console.WriteLine(Roman2Integer.Solution("LVIII"));
         }
     }
 }
