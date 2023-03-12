@@ -31,6 +31,8 @@ namespace LeetCodeSolutions
             // return ans;
             #endregion
 
+            //I reviewed someone else's answer and couldn't believe I didn't see this
+            #region Second Region
             int ans = 0;
 
             for (int i = 0; i < s.Length; i++)
@@ -41,6 +43,7 @@ namespace LeetCodeSolutions
             }
 
             return ans;
+            #endregion
         }
 
         private static int ReadRomanToInt (string s, char one, char five, char ten,ref int end)
