@@ -346,7 +346,14 @@ namespace LeetCodeSolutions
             //Console.WriteLine(IsPalindrome.Solution(-1231));
 
             //Roman 2 Integer
-            Console.WriteLine(Roman2Integer.Solution("LVIII"));
+            //Console.WriteLine(Roman2Integer.Solution("LVIII"));
+
+            //Largest Common Prefix
+            Console.WriteLine(new string[]{
+                "flower",
+                "flow",
+                "flight"
+            });
         }
     }
 }
