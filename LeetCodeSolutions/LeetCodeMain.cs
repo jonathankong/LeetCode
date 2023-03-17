@@ -349,11 +349,16 @@ namespace LeetCodeSolutions
             //Console.WriteLine(Roman2Integer.Solution("LVIII"));
 
             //Largest Common Prefix
-            Console.WriteLine(new string[]{
-                "flower",
-                "flow",
-                "flight"
-            });
+            // Console.WriteLine(new string[]{
+            //     "flower",
+            //     "flow",
+            //     "flight"
+            // });
+
+            //3 Sum Closest
+            Console.WriteLine(ThreeSumClosest.Solution(new int[]{
+                4,0,5,-5,3,3,0,-4,-5
+            }, -2805));
         }
     }
 }
