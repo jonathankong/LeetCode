@@ -231,7 +231,7 @@ namespace LeetCodeSolutions
             //Console.WriteLine(MaximumSubarray.Solution(new int[]{-2, 1, -3, 4, -1, 2, 1, -5 , 4}));
 
             //Remove Duplicates from Array
-            //Console.WriteLine(RemoveDuplicatesFromArray.Solution(new int[] {1, 1, 2}));
+            Console.WriteLine(RemoveDuplicatesFromArray.Solution(new int[] {1, 1, 2}));
 
             //RewrapAndJustify
             // var lines = RewrapAndJustify.Solution(new string[]{
@@ -356,9 +356,17 @@ namespace LeetCodeSolutions
             // });
 
             //3 Sum Closest
-            Console.WriteLine(ThreeSumClosest.Solution(new int[]{
-                4,0,5,-5,3,3,0,-4,-5
-            }, -2805));
+            // Console.WriteLine(ThreeSumClosest.Solution(new int[]{
+            //     4,0,5,-5,3,3,0,-4,-5
+            // }, -2805));
+
+            // IList<string> s = LetterCombinations.Solution("23");
+            // foreach(var item in s)
+            // {
+            //     Console.WriteLine(item);
+            // }
         }
     }
+
+
 }
