@@ -231,7 +231,7 @@ namespace LeetCodeSolutions
             //Console.WriteLine(MaximumSubarray.Solution(new int[]{-2, 1, -3, 4, -1, 2, 1, -5 , 4}));
 
             //Remove Duplicates from Array
-            Console.WriteLine(RemoveDuplicatesFromArray.Solution(new int[] {1, 1, 2}));
+            // Console.WriteLine(RemoveDuplicatesFromArray.Solution(new int[] {1, 1, 2}));
 
             //RewrapAndJustify
             // var lines = RewrapAndJustify.Solution(new string[]{
@@ -367,9 +367,13 @@ namespace LeetCodeSolutions
             // }
 
             //Remove Element
-            Console.WriteLine(RemoveElement.Solution(new int[] {
-                1, 2, 3, 3, 4, 0, 4, 2
-            }, 2));
+            // Console.WriteLine(RemoveElement.Solution(new int[] {
+            //     1, 2, 3, 3, 4, 0, 4, 2
+            // }, 2));
+
+            //Find Index of First Occurence in String
+            Console.WriteLine(FindIndexOfFirstOccurence.Solution("hello", "ll"));
+            
         }
     }
 
