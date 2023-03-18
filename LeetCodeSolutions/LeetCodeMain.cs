@@ -372,8 +372,10 @@ namespace LeetCodeSolutions
             // }, 2));
 
             //Find Index of First Occurence in String
-            Console.WriteLine(FindIndexOfFirstOccurence.Solution("hello", "ll"));
-            
+            //Console.WriteLine(FindIndexOfFirstOccurence.Solution("hello", "ll"));
+
+            //Divide Two Integers
+            Console.WriteLine(DivideTwoIntegers.Solution(7, -3));
         }
     }
 
