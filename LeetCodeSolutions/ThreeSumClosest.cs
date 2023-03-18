@@ -33,6 +33,7 @@ namespace LeetCodeSolutions
                     if (tempSum == target) return $"{target} {indx1} {indx2} {indx3}";
                     else if (tempSum < target) left++;
                     else right--;      
+                    char x = 'e';
                 }
             }
             return $"{closestSum} {indx1} {indx2} {indx3}";
