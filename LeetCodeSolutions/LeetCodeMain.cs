@@ -365,6 +365,11 @@ namespace LeetCodeSolutions
             // {
             //     Console.WriteLine(item);
             // }
+
+            //Remove Element
+            Console.WriteLine(RemoveElement.Solution(new int[] {
+                1, 2, 3, 3, 4, 0, 4, 2
+            }, 2));
         }
     }
 
