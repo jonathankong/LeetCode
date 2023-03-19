@@ -378,11 +378,14 @@ namespace LeetCodeSolutions
             //Console.WriteLine(DivideTwoIntegers.Solution(7, -3));
 
             //RunningSum1DArray
-            Array.ForEach(
-                RunningSum1DArray.Solution(new int[] {1, 2, 3, 4}), 
-                Console.WriteLine
-            );
-            Console.WriteLine(string.Join(", ", RunningSum1DArray.Solution(new int[] {1, 2, 3, 4})));
+            // Array.ForEach(
+            //     RunningSum1DArray.Solution(new int[] {1, 2, 3, 4}), 
+            //     Console.WriteLine
+            // );
+            // Console.WriteLine(string.Join(", ", RunningSum1DArray.Solution(new int[] {1, 2, 3, 4})));
+
+            //Find Pivot Index
+            Console.WriteLine(FindPivotIndex.Solution(new int[]{1, 7, 3, 6, 5, 6}));
         }
     }
 
