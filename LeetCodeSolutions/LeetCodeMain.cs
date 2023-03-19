@@ -375,7 +375,14 @@ namespace LeetCodeSolutions
             //Console.WriteLine(FindIndexOfFirstOccurence.Solution("hello", "ll"));
 
             //Divide Two Integers
-            Console.WriteLine(DivideTwoIntegers.Solution(7, -3));
+            //Console.WriteLine(DivideTwoIntegers.Solution(7, -3));
+
+            //RunningSum1DArray
+            Array.ForEach(
+                RunningSum1DArray.Solution(new int[] {1, 2, 3, 4}), 
+                Console.WriteLine
+            );
+            Console.WriteLine(string.Join(", ", RunningSum1DArray.Solution(new int[] {1, 2, 3, 4})));
         }
     }
 
