@@ -388,7 +388,10 @@ namespace LeetCodeSolutions
             //Console.WriteLine(FindPivotIndex.Solution(new int[]{1, 7, 3, 6, 5, 6}));
 
             //Is Isomorphic
-            Console.WriteLine(IsIsomorphic.Solution("badc", "baba"));
+            //Console.WriteLine(IsIsomorphic.Solution("badc", "baba"));
+
+            //Is Subsequence
+            Console.WriteLine(IsSubsequence.Solution("axc", "ahbgdc"));
         }
     }
 
