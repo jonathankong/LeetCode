@@ -53,9 +53,9 @@ namespace LeetCodeSolutions
             //Console.WriteLine(ValidParentheses.Solution("]([)]"));
 
             //Merge Two Sorted Lists
-            //ListNode l1 = new ListNode(1, new ListNode(2, new ListNode(4)));
-            //ListNode l2 = new ListNode(1, new ListNode(3, new ListNode(4)));
-            //MergeTwoSortedLists.Solution(l1, l2).PrintValues();
+            ListNode l1 = new ListNode(1, new ListNode(2, new ListNode(4)));
+            ListNode l2 = new ListNode(1, new ListNode(3, new ListNode(4)));
+            MergeTwoSortedLists.Solution(l1, l2).PrintValues();
 
             //Generate Parentheses
             //foreach(string s in GenerateParenthesis.Solution(3))
@@ -391,7 +391,7 @@ namespace LeetCodeSolutions
             //Console.WriteLine(IsIsomorphic.Solution("badc", "baba"));
 
             //Is Subsequence
-            Console.WriteLine(IsSubsequence.Solution("axc", "ahbgdc"));
+            //Console.WriteLine(IsSubsequence.Solution("axc", "ahbgdc"));
         }
     }
 
