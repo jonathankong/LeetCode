@@ -6,23 +6,22 @@ namespace LeetCodeSolutions
 {
     static class Test
     {
-        public static int Solution(int steps)
+        public static void Solution(int steps)
         {
-            int answer = 0;
-            int step1 = 1;
-            int step2 = 1;
-            int step3 = 2;
+            ListNode s = new ListNode(1, new ListNode(2, new ListNode(4)));
+            ListNode t = new ListNode(1, new ListNode(3, new ListNode(4)));
 
-            for (int i = 0; i < steps - 2; i++)
-            {
-                var temp1 = step1;
-                var temp2 = step2;
-                step1 = step2;
-                step2 = step3;
-                step3 = temp1 + temp2 + step2;
-            }
-
-            return step3;
+            var currNode1 = s;
+            var currNode2 = t;
+            AddNode(s, 20);
+            currNode1 = currNode1.next;
+            AddNode(s, 10);
+        }
+        private static void AddNode(ListNode s, int val)
+        {
+            var temp = s.next;
+            s.next = new ListNode(val);
+            s.next.next = temp;
         }
     }
 }
