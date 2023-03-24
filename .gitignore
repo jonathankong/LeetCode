@@ -353,3 +353,4 @@ MigrationBackup/
 .ionide/
 LeetCodeSolutions/.vscode/launch.json
 LeetCodeSolutions/.vscode/tasks.json
+LeetCodeSolutions/Test.cs
