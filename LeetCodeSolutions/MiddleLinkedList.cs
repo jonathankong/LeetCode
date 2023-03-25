@@ -36,6 +36,8 @@ namespace LeetCodeSolutions
             while (currNode != null)
             {
                 count++;
+                //Get second middle node on even running count
+                //If the count is odd, then midNode is still correct
                 if (count % 2 == 0) midNode = midNode.next;
                 currNode = currNode.next;
 
