@@ -53,9 +53,9 @@ namespace LeetCodeSolutions
             //Console.WriteLine(ValidParentheses.Solution("]([)]"));
 
             //Merge Two Sorted Lists
-            ListNode l1 = new ListNode(1, new ListNode(2, new ListNode(4)));
-            ListNode l2 = new ListNode(1, new ListNode(3, new ListNode(4)));
-            MergeTwoSortedLists.Solution(l1, l2).PrintValues();
+            // ListNode l1 = new ListNode(1, new ListNode(2, new ListNode(4)));
+            // ListNode l2 = new ListNode(1, new ListNode(3, new ListNode(4)));
+            // MergeTwoSortedLists.Solution(l1, l2).PrintValues();
 
             //Generate Parentheses
             //foreach(string s in GenerateParenthesis.Solution(3))
@@ -392,8 +392,17 @@ namespace LeetCodeSolutions
 
             //Is Subsequence
             //Console.WriteLine(IsSubsequence.Solution("axc", "ahbgdc"));
+
+            //Reverse Linked List
+            // ListNode l1 = new ListNode(1, new ListNode(2, new ListNode(4, new ListNode(5))));
+            // Console.WriteLine(ReverseLinkedList.Solution(l1));
+
+            //Merge Sort
+            /*
+                Console.WriteLine(string.Join(", ", MergeSort.Solution(new int[] {8, 3, 9, 7, 4, 1, 5, 2})));
+            */
+
+            Console.WriteLine(string.Join(',', Test.Solution(new int[]{1, 2, 3, 4})));
         }
     }
-
-
 }
